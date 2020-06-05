@@ -35,7 +35,7 @@
 (setq display-line-numbers-type t)
 
 ;; trying to init emacs at a certain place
-(setq initial-frame-alist '((top . 1600) (left . 0) (width . 640) (height . 92)))
+(setq initial-frame-alist '((top . 1630) (left . (0)) (width . 637) (height . 89)))
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -54,6 +54,17 @@
 (after! tuareg-mode
   (load! "ocaml.el")
   )
+
+
+(message "%s" "setting tabs keys")
+(global-set-key (kbd "C-c <C-M-right>") 'centaur-tabs-forward-tab-other-window)
+(global-set-key (kbd "C-c <C-M-left>") 'centaur-tabs-backward-tab-other-window)
+
+
+;; projectile prefix and init
+;;;(message "%s" "invalidating projectile cache")
+;;;(projectile-invalidate-cache nil)
+(define-key projectile-mode-map  (kbd "C-c p") 'projectile-command-map)
 
 ;; rebind alt-3 for hash like other editors on mac
 (fset 'insertPound "#")

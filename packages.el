@@ -23,7 +23,8 @@
 (package! merlin)
 (package! reason-mode)
 (package! tuareg)
-(package! proof-general)
+;;;; (package! proof-general)
+(package! itail)
 
 ;; To install a package directly from a particular repo, you'll need to specify
 ;; a `:recipe'. You'll find documentation on what `:recipe' accepts here:
