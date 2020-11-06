@@ -47,6 +47,7 @@
 ;;   `require' or `use-package'.
 ;; - `map!' for binding new keys
 ;;
+
 (after! reason-mode
   (load! "reason.el")
   (merlin-mode))
