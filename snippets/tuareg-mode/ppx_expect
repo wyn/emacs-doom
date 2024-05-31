@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ppx_expect
+# key: ppx_expect
+# --
+
+let%expect_test $1 = $0 ; [%expect \{| |\}];

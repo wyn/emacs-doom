@@ -29,5 +29,5 @@
 (require 'merlin)
 (add-hook 'tuareg-mode-hook 'merlin-mode)
 
-
 (setq merlin-ac-setup t)
+

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: prerr_endline
+# key: prerr_endline
+# --
+prerr_endline @@ Fmt.str "@[SWP: $1 @]@." $0;

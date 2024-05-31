@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: yojson
+# key: yojson
+# --
+\`Assoc [("contents", $1); ("tag", \`String "$0")]

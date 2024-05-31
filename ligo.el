@@ -1,3 +1,3 @@
 ;;; ligo.el -*- lexical-binding: t; -*-
 
-(ligo-setup-lsp)
+;; (ligo-setup-lsp)
