@@ -5,6 +5,6 @@
 
 (defun magit-log-in-dir-since-date (dir date)
   "Show the log for DIR since DATE."
-  (interactive "DDirectory: \nsSince date: ")
-  (magit-log-setup-arguments "--since=" date)
-  (magit-log-current nil (list (file-relative-name dir (magit-toplevel)))))
+  (interactive "DDirectory: \nsSince the date: ")
+  (magit-log-current nil (list "--since" date) (list (file-relative-name dir (magit-toplevel))))
+  )
