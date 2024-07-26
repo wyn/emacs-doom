@@ -97,6 +97,8 @@
   (add-to-list 'lsp-file-watch-ignored-directories "/home/wyn/dev/smartpy-private/.cabal")
   (add-to-list 'lsp-file-watch-ignored-directories "/home/wyn/dev/smartpy-private/.opam")
   (add-to-list 'lsp-file-watch-ignored-directories "/home/wyn/dev/smartpy-private/test-baselines")
+  (add-to-list 'lsp-file-watch-ignored-directories "/home/wyn/dev/")
+  (add-to-list 'lsp-file-watch-ignored-directories "/home/wyn/")
   (setq lsp-file-watch-threshold 2000)
   )
 
