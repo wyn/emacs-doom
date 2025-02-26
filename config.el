@@ -39,11 +39,11 @@
 ;; (setq initial-frame-alist '((top . 1630) (left . (0)) (width . 637) (height . 89)))
 
 ;; overwrite selected text
-(setq delete-selection-mode t)
+(delete-selection-mode t)
 
 
 ;; backspace is delete backwards, not help menu 
-(setq normal-erase-is-backspace-mode 1)
+(normal-erase-is-backspace-mode 1)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
