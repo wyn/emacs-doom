@@ -36,10 +36,14 @@
 (setq display-line-numbers-type t)
 
 ;; trying to init emacs at a certain place
-; (setq initial-frame-alist '((top . 1630) (left . (0)) (width . 637) (height . 89)))
+;; (setq initial-frame-alist '((top . 1630) (left . (0)) (width . 637) (height . 89)))
 
 ;; overwrite selected text
-(delete-selection-mode t)
+(setq delete-selection-mode t)
+
+
+;; backspace is delete backwards, not help menu 
+(setq normal-erase-is-backspace-mode 1)
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -110,9 +114,9 @@
         (append
          argv
          (list "--cwd" (concat (lsp--suggest-project-root) "haskell") "-j" "8")
+         )
         )
       )
-)
 
 ;; ipython/jupyter
 (setq +python-ipython-repl-args '("-i" "--simple-prompt" "--no-color-info"))
@@ -143,7 +147,7 @@
 ;; org-roam
 (use-package! org-roam
   :custom (org-roam-directory "~/roam")
-;;  :config (org-roam-setup)
+  ;;  :config (org-roam-setup)
   )
 
 ;; mu4e email
